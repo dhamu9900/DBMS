@@ -10,7 +10,7 @@ CREATE TABLE students (
 
 INSERT INTO students (student_id, first_name, last_name, department, age)
 VALUES 
-    (1, 'Vyshnavi', 'Narreddy', 'Computer Science', 20),
+    (1, 'damodara', 'reddy', 'Computer Science', 20),
     (2, 'Lakshmi', 'Annareddy', 'Mathematics', 22),
     (3, 'Bhavya', 'Kancherla', 'Physics', 21),
     (4, 'Chandrika', 'Maganti', 'Engineering', 23),
@@ -28,7 +28,7 @@ WHERE department = 'Computer Science';
 Output:
 
 student_id	first_name	last_name	department		age
-1		Vyshnavi	Narreddy	Computer Science	20
+1		damodara	reddy	Computer Science	20
 
 
 3)Create a table named 'departments' with columns dept_id" and "dept_name. Insert 3 records. Perform an inner join between students' and 'departments to list all students with their department names.
@@ -54,7 +54,7 @@ INNER JOIN departments ON students.department = departments.dept_name;
 
 output:
 student_id	first_name	last_name	department_name	        age
-1		Vyshnavi	Narreddy 	Computer Science	20
+1		damoadara	     reddy    	Computer Science	20
 2		Lakshmi         Annareddy       Mathematics             22
 3		Bhavya          Kancherla       Physics                 21
 
@@ -71,10 +71,10 @@ LEFT JOIN students ON departments.dept_name = students.department;
 Output:
 
 dept_id	dept_name	student_id	first_name	last_name	age
-1	Computer Science	1	Vyshnavi	Narreddy	20
-2	Mathematics		2	Lakshmi 	Annareddy	22
+1	Computer Science	1	damodara      reddy	      20
+2	Mathematics		2	Lakshmi 	Annareddy	      22
 2	Mathematics		NULL	NULL		NULL		NULL
-3	Physics			3	Bhavya		Kancherla	21
+3	Physics			3	Bhavya		Kancherla	     21
 4	Engineering		NULL	NULL		NULL		NULL
 5	Biology			5	Vamshi		Thummalareddy	19
 
